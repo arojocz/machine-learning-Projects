@@ -10,7 +10,7 @@
 | # | Project | Algorithm | Dataset |
 |---|---------|-----------|---------|
 | 01 | [K-Nearest Neighbors](#01-k-nearest-neighbors) | KNN | UCI Iris |
-
+| 01 | [K-Nearest Neighbors](#01-k-nearest-neighbors) | KNN | UCI Iris |
 
 ---
 
@@ -34,17 +34,20 @@
 ```
 ml-portfolio/
 │
-├── README.md                    ← You are here
+├── README.md 
 ├── .gitignore
 │
-├── 01-knn/
+├── 01-KNN/
+│   ├── knn-classifier.pdf
 │   ├── knn.py
-│   ├── requirements.txt
+│   ├── knn2.py
+│   ├── led7digit.dat
+│   ├── iris.data
 │   └── README.md
 │
-├── 02-naive-bayes/
-│   ├── naive_bayes.py
-│   ├── requirements.txt
+├── 02-Multiclass Evaluation Metrics/
+│   ├── multiclass_cm.py
+│   ├── multiclass_eval_metrics.txt
 │   └── README.md
 │
 ├── 03-logistic-regression/
@@ -68,19 +71,17 @@ ml-portfolio/
 
 ---
 
-## Project Summaries
-
 ### 01 K-Nearest Neighbors
-**Problem:** Multiclass flower species classification.  
-**Approach:** Explored the effect of K neighbours and distance metrics (Euclidean) on performance. Final model uses K=5 with standardized features.  
-**Key finding:** 
+**Problem:** Multiclass and binary pattern classification across three benchmark datasets (Iris, LED7Digit, Heart Disease).  
+**Approach:** KNN implemented from scratch using Euclidean distance with custom class-weighted confusion matrix aggregation. Evaluated with 5-Fold Cross-Validation and Leave-One-Out, fixed k=5.  
+**Key finding:** Strong on separable data (Iris 97.5% balanced accuracy) but drops to 62.8% on Heart Disease — performance is dictated entirely by feature space geometry, not model complexity.
 
 ---
 
-### 02 Naive Bayes Classifier
-**Problem:** Binary spam detection on SMS messages.  
-**Approach:** Applied TF-IDF vectorization with Multinomial Naive Bayes. Compared Gaussian, Bernoulli, and Multinomial variants.  
-**Key finding:** Multinomial NB outperformed the others due to the frequency-based nature of text features.
+### 02 Multiclass Evaluation — KNN vs Gaussian Naive Bayes
+**Problem:** Wine cultivar classification (3 classes) with full per-class metric reporting.  
+**Approach:** Head-to-head benchmark of KNN (k=3) vs GaussianNB using Leave-One-Out, with per-class confusion matrices and Macro, Weighted, and Micro averaging.  
+**Key finding:** GaussianNB achieves 97.8% macro F1 vs 71.5% for KNN — the gap is almost entirely explained by the absence of feature normalization, which distorts Euclidean distance on Wine's mixed-scale features.
 
 ---
 

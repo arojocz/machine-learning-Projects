@@ -106,9 +106,6 @@ cd ml-portfolio/01-knn
 python -m venv venv
 source venv/bin/activate
 
-# Install dependencies
-pip install -r requirements.txt
-
 # Add your datasets to this folder, then run
 python knn.py
 ```
