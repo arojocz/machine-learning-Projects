@@ -7,10 +7,11 @@
 
 ## Projects
 
-| # | Project | Algorithm | Dataset |
-|---|---------|-----------|---------|
+| # | Project | Algorithm | Dataset | Accuracy (best) |
+|---|---------|-----------|---------|-----------------|
 | 01 | [K-Nearest Neighbors](#01-k-nearest-neighbors) | KNN | UCI Iris |
-| 01 | [K-Nearest Neighbors](#01-k-nearest-neighbors) | KNN | UCI Iris |
+| 02 | [Multiclass Evaluation — KNN vs GaussianNB](#02-multiclass-evaluation--knn-vs-gaussian-naive-bayes) | KNN / GaussianNB | UCI Wine | 97.8% (GNB) |
+| 03 | [Gaussian Naïve Bayes](#03-gaussian-naïve-bayes) | GaussianNB | Iris / Heart / LED7Digit | 96.5% (Iris LOO) |
 
 ---
 
@@ -50,8 +51,13 @@ ml-portfolio/
 │   ├── multiclass_eval_metrics.txt
 │   └── README.md
 │
-├── 03-logistic-regression/
-│   └── ...
+├── 03-gaussian-naive-bayes/
+│   └── gaussian_naive_bayes.pdf
+│   └── heart.dat
+│   └── iris.dat
+│   └── led7digit.dat
+│   └── multiclass_cm.py
+│   └── README.md
 │
 ├── 04-decision-tree/
 │   └── ...
@@ -85,6 +91,12 @@ ml-portfolio/
 
 ---
 
+### 03 Gaussian Naïve Bayes
+**Problem:** Multiclass and binary classification across Iris, Heart Disease, and LED7Digit.  
+**Approach:** GNB implemented from scratch using log-likelihood with Gaussian PDF. Evaluated with LOO and 10-Fold CV, reporting per-class Sensitivity, Specificity, and Balanced Accuracy.  
+**Key finding:** Strong on simple distributions (Iris 96.5%) but sensitivity drops to 69% on LED7Digit's 10-class problem — the conditional independence assumption weakens as class overlap increases.
+---
+
 ## How to Run Any Project
 
 ```bash
@@ -98,7 +110,6 @@ cd 01-knn
 # Create environment and install dependencies
 python -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
 
 # Run
 python main.py

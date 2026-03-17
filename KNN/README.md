@@ -146,6 +146,6 @@ numpy>=1.24.0
 
 ## Author
 
-**Luis Angel Rojo Chavez** — [GitHub](https://github.com/your-username)
+**Luis Angel Rojo Chavez** — [GitHub](https://github.com/arojocz)
 
 *IPN — Centro de Investigación en Computación | Clasificación Inteligente de Patrones*

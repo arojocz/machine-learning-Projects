@@ -84,4 +84,4 @@ tabulate>=0.9.0
 
 ## Author
 
-**Luis Angel Rojo Chavez** — [GitHub](https://github.com/your-username)
+**Luis Angel Rojo Chavez** — [GitHub](https://github.com/arojocz)
