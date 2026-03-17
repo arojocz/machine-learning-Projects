@@ -7,18 +7,10 @@
 
 ## Projects
 
-| # | Project | Algorithm | Dataset | Accuracy | Status |
-|---|---------|-----------|---------|----------|--------|
-| 01 | [K-Nearest Neighbors](#01-k-nearest-neighbors) | KNN | UCI Iris | 96.7% | ✅ Complete |
-| 02 | [Naive Bayes Classifier](#02-naive-bayes-classifier) | Gaussian NB | SMS Spam | 98.1% | ✅ Complete |
-| 03 | [Logistic Regression](#03-logistic-regression) | LogReg | Titanic | 82.3% | ✅ Complete |
-| 04 | [Decision Tree](#04-decision-tree) | CART | Heart Disease | 87.5% | ✅ Complete |
-| 05 | [Random Forest](#05-random-forest) | Ensemble | Credit Risk | 91.2% | ✅ Complete |
-| 06 | [Support Vector Machine](#06-support-vector-machine) | SVM / SVC | Breast Cancer | 97.4% | ✅ Complete |
-| 07 | [Gradient Boosting](#07-gradient-boosting) | XGBoost | Customer Churn | 93.8% | ✅ Complete |
-| 08 | [Neural Network](#08-neural-network) | MLP | MNIST Digits | 98.6% | ✅ Complete |
+| # | Project | Algorithm | Dataset |
+|---|---------|-----------|---------|
+| 01 | [K-Nearest Neighbors](#01-k-nearest-neighbors) | KNN | UCI Iris |
 
-> Update this table as you add projects. Replace accuracy values with your real results.
 
 ---
 
