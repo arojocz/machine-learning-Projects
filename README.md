@@ -12,6 +12,7 @@
 | 01 | [K-Nearest Neighbors](#01-k-nearest-neighbors) | KNN | UCI Iris |
 | 02 | [Multiclass Evaluation — KNN vs GaussianNB](#02-multiclass-evaluation--knn-vs-gaussian-naive-bayes) | KNN / GaussianNB | UCI Wine | 97.8% (GNB) |
 | 03 | [Gaussian Naïve Bayes](#03-gaussian-naïve-bayes) | GaussianNB | Iris / Heart / LED7Digit | 96.5% (Iris LOO) |
+| 04 | [Decision Tree — Gini Impurity](#04-decision-tree--gini-impurity) | Decision Tree | Iris / Heart / LED7Digit | 89.2% (LED7Digit) |
 
 ---
 
@@ -60,7 +61,12 @@ ml-portfolio/
 │   └── README.md
 │
 ├── 04-decision-tree/
-│   └── ...
+│   └── decision_tree.pdf
+│   └── decision_tree.py
+│   └── heart.dat
+│   └── iris.dat
+│   └── led7digit.dat
+│   └── README.md
 │
 ├── 05-random-forest/
 │   └── ...
@@ -95,6 +101,14 @@ ml-portfolio/
 **Problem:** Multiclass and binary classification across Iris, Heart Disease, and LED7Digit.  
 **Approach:** GNB implemented from scratch using log-likelihood with Gaussian PDF. Evaluated with LOO and 10-Fold CV, reporting per-class Sensitivity, Specificity, and Balanced Accuracy.  
 **Key finding:** Strong on simple distributions (Iris 96.5%) but sensitivity drops to 69% on LED7Digit's 10-class problem — the conditional independence assumption weakens as class overlap increases.
+
+---
+
+### 04 Decision Tree — Gini Impurity
+**Problem:** Binary classification on three datasets (Iris versicolor vs virginica, Heart Disease, LED7Digit).  
+**Approach:** Decision tree implemented from scratch using Gini impurity with exhaustive threshold search, depth-limited to 6. Evaluated with stratified Hold-Out 70/30 and compared against full-dataset results.  
+**Key finding:** Heart Disease drops 18 points between full-dataset (91.7%) and hold-out (73.6%) evaluation — a textbook overfitting case showing the tree memorizes training patterns. Depth limiting alone is insufficient; pruning strategies would help.
+
 ---
 
 ## How to Run Any Project
@@ -122,4 +136,4 @@ python main.py
 **Luis Angel Rojo Chavez**  
 Machine Learning and Artificial Intelligence enthusiast focused on building interpretable, well-evaluated models.
 
-[LinkedIn](https://www.linkedin.com/in/luis-angel-rojo-chavez/) · [GitHub](https://github.com/your-username) · [Email](arojocz@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/luis-angel-rojo-chavez/) · [GitHub](https://github.com/arojocz) · [Email](arojocz@gmail.com)
