@@ -69,7 +69,6 @@ cd ml-portfolio/06-gradient-descent-regression
 
 python -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
 
 # Run the notebook or script
 jupyter notebook gradient_descent.ipynb
