@@ -13,6 +13,7 @@
 | 02 | [Multiclass Evaluation — KNN vs GaussianNB](#02-multiclass-evaluation--knn-vs-gaussian-naive-bayes) | KNN / GaussianNB | UCI Wine | 97.8% (GNB) |
 | 03 | [Gaussian Naïve Bayes](#03-gaussian-naïve-bayes) | GaussianNB | Iris / Heart / LED7Digit | 96.5% (Iris LOO) |
 | 04 | [Decision Tree — Gini Impurity](#04-decision-tree--gini-impurity) | Decision Tree | Iris / Heart / LED7Digit | 89.2% (LED7Digit) |
+| 05 | [PCA + Multi-Classifier Benchmark](#05-pca--multi-classifier-benchmark) | KNN / GNB / DT / RF / AdaBoost | Iris / Heart / LED7Digit | 97.8% (GNB Iris orig.) |
 
 ---
 
@@ -68,17 +69,9 @@ ml-portfolio/
 │   └── led7digit.dat
 │   └── README.md
 │
-├── 05-random-forest/
+├── 05-PCA/
 │   └── ...
-│
-├── 06-svm/
-│   └── ...
-│
-├── 07-gradient-boosting/
-│   └── ...
-│
-└── 08-neural-network/
-    └── ...
+
 ```
 
 ---
@@ -111,6 +104,12 @@ ml-portfolio/
 
 ---
 
+### 05 PCA + Multi-Classifier Benchmark
+**Problem:** Evaluate whether PCA-based dimensionality reduction improves classification across three datasets and five algorithms.  
+**Approach:** Features standardized, reduced to minimum components explaining ≥90% variance (2–10 components), then benchmarked with KNN, GaussianNB, DecisionTree, RandomForest, and AdaBoost using stratified Hold-Out 70/30.  
+**Key finding:** PCA helps when features are correlated — GaussianNB on LED7Digit jumps from 65.5% to 74.2% — but consistently hurts when the original feature space already provides clean class separation, as with GaussianNB on Iris (97.8% → 82.2%).
+
+---
 ## How to Run Any Project
 
 ```bash
