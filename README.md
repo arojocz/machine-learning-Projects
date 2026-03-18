@@ -1,7 +1,7 @@
 # machine-learning-Projects
 # Machine Learning Portfolio
 
-> A curated collection of supervised learning projects covering classical and modern classification algorithms, built with real-world datasets, rigorous evaluation, and production-ready code.
+> A curated collection of supervised learning projects covering classical and modern algorithms, built with real-world datasets, rigorous evaluation, and production-ready code.
 
 ---
 
@@ -23,7 +23,6 @@
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3-orange)
 ![pandas](https://img.shields.io/badge/pandas-2.0-green)
-![XGBoost](https://img.shields.io/badge/XGBoost-1.7-red)
 
 - **Language:** Python 3.10+
 - **Core libraries:** scikit-learn, pandas, NumPy, Matplotlib, Seaborn
@@ -81,7 +80,7 @@ ml-portfolio/
 ├── 06-Gradient-descent-AND-linear-regression/
 │   └── gd_linear_regression.pdf
 │   └── gd_linear_regression.ipynb
-│   └── .ipynb
+│   └── README.md
 
 
 ```
