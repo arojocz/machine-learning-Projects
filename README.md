@@ -14,6 +14,7 @@
 | 03 | [Gaussian Naïve Bayes](#03-gaussian-naïve-bayes) | GaussianNB | Iris / Heart / LED7Digit | 96.5% (Iris LOO) |
 | 04 | [Decision Tree — Gini Impurity](#04-decision-tree--gini-impurity) | Decision Tree | Iris / Heart / LED7Digit | 89.2% (LED7Digit) |
 | 05 | [PCA + Multi-Classifier Benchmark](#05-pca--multi-classifier-benchmark) | KNN / GNB / DT / RF / AdaBoost | Iris / Heart / LED7Digit | 97.8% (GNB Iris orig.) |
+| 06 | [Gradient Descent & Linear Regression](#06-gradient-descent--linear-regression) | Linear Regression | Diabetes / Auto MPG | MSE ~17.5 (Auto MPG) |
 
 ---
 
@@ -70,7 +71,18 @@ ml-portfolio/
 │   └── README.md
 │
 ├── 05-PCA/
-│   └── ...
+│   └── PCA.pdf
+│   └── PCA.ipynb
+│   └── heart.png
+│   └── iris.png
+│   └── led7digit.png
+│   └── README.md
+│
+├── 06-Gradient-descent-AND-linear-regression/
+│   └── gd_linear_regression.pdf
+│   └── gd_linear_regression.ipynb
+│   └── .ipynb
+
 
 ```
 
@@ -110,6 +122,14 @@ ml-portfolio/
 **Key finding:** PCA helps when features are correlated — GaussianNB on LED7Digit jumps from 65.5% to 74.2% — but consistently hurts when the original feature space already provides clean class separation, as with GaussianNB on Iris (97.8% → 82.2%).
 
 ---
+
+### 06 Gradient Descent & Linear Regression
+**Problem:** Predict continuous values (disease progression and fuel efficiency) using linear regression trained via batch gradient descent.  
+**Approach:** Gradient descent implemented from scratch with symbolic differentiation (SymPy). Applied to two datasets with 30,000 epochs, learning rate tuning, and cost curve tracking.  
+**Key finding:** Auto MPG requires a learning rate 10x smaller than Diabetes — even after standardization, its feature gradients diverge at α=0.005. This highlights that learning rate is a dataset property, not just a hyperparameter to tune once.
+
+---
+
 ## How to Run Any Project
 
 ```bash
