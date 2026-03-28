@@ -20,9 +20,9 @@
 
 ## Tech Stack
 
-![Python](https://img.shields.io/badge/Python-3.10-blue)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3-orange)
-![pandas](https://img.shields.io/badge/pandas-2.0-green)
+![Python](https://img.shields.io/badge/Python-blue)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-orange)
+![pandas](https://img.shields.io/badge/pandas-green)
 
 - **Language:** Python 3.10+
 - **Core libraries:** scikit-learn, pandas, NumPy, Matplotlib, Seaborn
