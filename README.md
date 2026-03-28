@@ -20,9 +20,12 @@
 
 ## Tech Stack
 
-![Python](https://img.shields.io/badge/Python-blue)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-orange)
-![pandas](https://img.shields.io/badge/pandas-green)
+![Python](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
 
 - **Language:** Python 3.10+
 - **Core libraries:** scikit-learn, pandas, NumPy, Matplotlib, Seaborn

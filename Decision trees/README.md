@@ -48,7 +48,6 @@ cd ml-portfolio/04-decision-tree
 
 python -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
 
 # Place iris.data, heart.dat, led7digit.dat in this folder, then:
 python decision_tree.py
