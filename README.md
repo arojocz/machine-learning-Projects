@@ -15,6 +15,7 @@
 | 04 | [Decision Tree — Gini Impurity](#04-decision-tree--gini-impurity) | Decision Tree | Iris / Heart / LED7Digit | 89.2% (LED7Digit) |
 | 05 | [PCA + Multi-Classifier Benchmark](#05-pca--multi-classifier-benchmark) | KNN / GNB / DT / RF / AdaBoost | Iris / Heart / LED7Digit | 97.8% (GNB Iris orig.) |
 | 06 | [Gradient Descent & Linear Regression](#06-gradient-descent--linear-regression) | Linear Regression | Diabetes / Auto MPG | MSE ~17.5 (Auto MPG) |
+| 07 | [Gradient Descent & Linear Regression](#07-Logistic-Regression-Classifier) | Logistic Regression | Breast Cancer  | Acc 98.5% |
 
 ---
 
