@@ -84,6 +84,12 @@ ml-portfolio/
 │   └── gd_linear_regression.pdf
 │   └── gd_linear_regression.ipynb
 │   └── README.md
+|
+├── 07-Logistic-Regression/
+│   └── logistic_regression.pdf
+│   └── logistic_regression.ipynb
+│   └── README.md
+│   └── requirements.txt
 
 
 ```
@@ -132,6 +138,13 @@ ml-portfolio/
 
 ---
 
+### 07 Logistic Regression Classifier
+**Problem:** Classify binary labels by approximating conditional probabilities while managing risks like infinite weight growth and feature scale disparities.  
+**Approach:** Implementation from scratch using a computational graph to perform backpropagation via the chain rule. Optimized via Maximum Likelihood Estimation (MLE) and Gradient Descent, optional: incorporating $L_2$ regularization (Ridge) and Z-score standardization to ensure numerical stability and efficient convergence.  
+
+
+---
+
 ## How to Run Any Project
 
 ```bash
@@ -147,7 +160,7 @@ python -m venv venv
 source venv/bin/activate
 
 # Run
-python main.py
+python program_name.py
 ```
 
 

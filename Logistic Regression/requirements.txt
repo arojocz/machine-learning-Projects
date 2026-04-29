@@ -1,0 +1,12 @@
+# Operaciones matriciales y cálculo numérico
+numpy>=1.24.0
+
+# Manipulación de datasets y estructuras de datos
+pandas>=2.0.0
+
+# Visualización de curvas de error y fronteras de decisión
+matplotlib>=3.7.0
+
+# Opcional: Para la partición de datos (train/test split) 
+# aunque la lógica principal sea "from scratch"
+scikit-learn>=1.3.0
